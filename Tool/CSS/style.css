@@ -1,0 +1,106 @@
+*{
+padding:0px; list-style-type:none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 4px;
+}
+
+a, img {
+	border:0;
+}
+
+body,html{
+font-size:12px;
+font-family: "微软雅黑", "宋体", Arial, Verdana;
+}
+
+
+
+A:link, A:active
+{
+	color: #FF0000;
+	text-decoration: none;
+        font-size: 13px;
+    font-style: italic;
+}
+A:visited
+{  
+	color: #000;
+	text-decoration: none;
+        font-size: 13px;
+
+}
+A:hover
+{
+	color: #FF0000;
+	text-decoration: none;
+        font-size: 13px;
+
+}
+
+	
+hr
+{
+	border:1px solid #ccc;
+	height:1px;
+	}
+	
+h4
+{
+	padding-left:20px;
+	padding-top:2px;	
+	font-size:14px;
+	font-weight:bold;
+	}
+
+/*LoginForm*/
+.BoxLogin {
+	-webkit-box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.75);
+	border: 0px solid #000000;
+}
+
+/**MainTable**/
+.BoxTable{
+	-webkit-box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.75);
+	border: 0 1px solid #fff; margin:0px auto; margin-top:10px; margin-bottom:40px;
+}
+.BoxFooter{ height:24px; color:#CCC; padding:5px 10px; background:#2D7FD3;}
+.BoxUser{ height:30px; color:#666; padding:5px 10px; background:#F7F7F7; line-height:30px}
+.BoxUser a{ color:#BFDCFB}
+
+.BoxBody{ padding: 2px 8px; background:#FFF;}
+
+.BoxBody h4{ height:30px; 
+font-size:20px; color:#666; padding:6px 0 6px 6px; width:319%; 
+background:#eeeeee; margin-bottom:6px
+}
+.BoxBody table td{ padding:6px 10px;
+    width: 0;
+}
+.BoxBody u{ border:1px solid #CCC; width:100px; padding:4px 10px; color:#98B0EF}
+.BoxSearchBar{ border-bottom: 1px solid #eeeeee; height:21px; 
+margin-bottom:6px; color:#999;
+    width: 1089px;
+}
+.BoxToolBar{ border-top: 1px solid #eeeeee; background:#F6F6F6; padding:6px; height:19px; 
+margin:6px 0; color:#999
+}
+
+/*GridView*/
+.GridStyle, .GridStyle th, .GridStyle td{ border:1px solid #dddddd;
+    font-size: x-small;
+}
+
+.GridStyle th{ height:26px; line-height:26px; padding:2px 4px; font-size:14px;}
+
+/*GridView-Paper*/
+
+.PagerTitle{ text-align:center; font-size:20px; font-weight:bold; padding-top:20px}
+.GridPaper, .GridPaper th, .GridPaper td{ border:1px solid #ffffff; padding:4px; font-size:14px}
+
+.GridPaper th{ height:26px; line-height:26px; padding:2px 4px; font-size:16px; background:#dddddd}
+.GridPaper .ItemTitle{ font-size:16px;}

@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Exam_MasterPage" %>
+<%@ Register Src="~/Tool/Controls/lefttree.ascx" TagName="lefttree" TagPrefix="uc1" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Integration Assistant Tool</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="JS/menu/menu.css" rel="stylesheet" />
+    <script src="JS/jquery.1.4.2-min.js"></script>
+    <script src="JS/menu/jquery.menu.js"></script>
+    <script src="JS/Showtime.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table width="1560" height="960" border="0" align="center" cellpadding="0" cellspacing="0" class="BoxTable">
+            <tr>
+                <td colspan="2" class="BoxFooter">
+                    <img src="CSS/MaterTop.JPG" width="453" height="83" /></td>
+            </tr>
+
+            <tr>
+               
+
+                <td width="200" bgcolor="#F7F7F7" valign="top">
+                     <span class="BoxUser" >Welcome：<asp:Label ID="labUser" runat="server" Text="Label" Width="70px"></asp:Label>&nbsp;&nbsp;[<a href="Login.aspx?act=logout">Logout</a>]
+                    </span>
+                    <uc1:lefttree ID="Lefttree1" runat="server" />
+                </td>
+                <td  class="BoxBody" valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="BoxFooter">AnglicareSA Copyright@2015-2016  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           [Version 1.0]  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Client IP Address: <asp:Label ID="IPLabel" runat="server"></asp:Label>&nbsp;] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   [Login Time: 
+                    <asp:Label ID="TimeLabel" runat="server"></asp:Label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

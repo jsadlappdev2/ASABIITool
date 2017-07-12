@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   
+<head>
+    <title></title>
+<script language="javascript">
+         //设置进度条进度
+    function SetPorgressBar(msg, pos) {
+
+        
+        ProgressBar.style.width = pos + "%";
+       
+             WriteText("Msg1", msg + " Finished" + pos + "%");
+         }
+
+         //设置进度条完成信息
+        // function SetCompleted(msg) {
+            // if (msg == "")
+                // WriteText("Msg1", "Complete。");
+           //  else
+               //  WriteText("Msg1", msg);
+    //}
+    //完成后隐藏进度条
+    function SetCompleted() {
+        ProgressBarSide.style.display = "none";
+    }
+
+         // 更新文本显示信息
+         function WriteText(id, str) {
+             var strTag = '<font face="Verdana, Arial, Helvetica" size="2" color="#ea9b02"><B>' + str + '</B></font>';
+             if (document.all) document.all[id].innerHTML = strTag;
+         }
+</script>
+</head>
+<body>
+
+ <div id="ProgressBarSide" style="color:Silver;border-width:1px;border-style:Solid;width:300px;">
+ <div id="ProgressBar" style="background-color:#3366FF; height:21px; width:0%;"></div>
+</div>
+</body>
+</html>
